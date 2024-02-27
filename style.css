@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.corpo{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.73) 28%, rgba(12, 151, 9, 0.74) 100%);
+    box-sizing:border-box;
+}
+
+:root{
+    --cor-primaria: #E8FFFF;
+    --cor-detalhes: #213E3B;
+    --cor-hover: #b3ebc4;
+}
+
+.cabecalho{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    color: #fafce8;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.5rem;
+}
+
+.conteudo{
+    margin: 5% 25%;
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+}
+
+.entrada{
+    border: 2px solid var(--cor-detalhes);
+    width: 28.6rem;
+    height: 26.5rem;
+    flex-shrink: 0;
+    border-radius: 90PX;
+    opacity: 0.9;
+    background: var(--cor-primaria);
+    vertical-align: bottom;
+    white-space: wrap;
+}
+
+.entrada-caixa{
+    margin: 40px 19px;
+    width: 26rem;
+    height: 21.6rem;
+    font-size: 36px;
+    resize: none;
+    opacity: 0.9;
+    background: var(--cor-primaria);
+    flex-shrink: 0;
+    border: 0;
+    outline: none;
+}
+
+.entrada-butoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.entrada-criptografar{
+    width: 24.8rem;
+    height: 4.5rem;
+    flex-shrink: 0;
+    border-radius: 28px;
+    border: 3px solid var(--cor-detalhes);
+    color: var(--cor-detalhes);
+    background: var(--cor-primaria);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.entrada-criptografar:hover{
+    background-color: var(--cor-hover);
+    cursor: pointer;
+}
+
+.entrada-descriptografar{
+    width: 24.8rem;
+    height: 4.7rem;
+    flex-shrink: 0;
+    border-radius: 28px;
+    color: var(--cor-detalhes);
+    border: 3px solid var(--cor-detalhes);
+    background: var(--cor-primaria);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.entrada-descriptografar:hover{
+    background-color: var(--cor-hover);
+    cursor: pointer;
+}
+
+.saida {
+    width: 24rem;
+    height: 38.8rem;
+    border-radius: 72px;
+    background: var(--cor-primaria);
+    flex-shrink: 0;
+    margin-top: 0;
+    border: 2px solid var(--cor-detalhes);
+}
+
+.saida-caixa {
+    margin: 40px 25px;
+    color: black;
+    width: 21.7rem;
+    height: 30rem;
+    font-size: 2.2rem;
+    resize: none;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    background: var(--cor-primaria);
+    flex-shrink: 0;
+    border: 0;
+    outline: none;
+}
+
+.saida-copiar{
+    width: 17.1rem;
+    height: 4.7rem;
+    flex-shrink: 0;
+    border-radius: 22.4px;
+    border: 3px solid var(--cor-detalhes);
+    background: var(--cor-primaria);
+    justify-content: center;
+    margin-top: -38px;
+    align-items: center;
+    margin-left: 3.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--cor-detalhes);
+}
+
+.saida-copiar:hover{
+    background-color: var(--cor-hover);
+    cursor: pointer;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--cor-detalhes);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 2.64px;
+    margin-left: auto;
+}
+
+.rodape-texto{
+    text-decoration: none;
+    color:var(--cor-detalhes);
+}
+
+
+
+/* tela pequena smartphone*/
+@media (min-width: 319px) and (max-width: 339px)  {
+    .cabecalho{
+        font-size: 1.2rem;
+        margin: auto;
+        font-weight: 600;
+        margin-left: 7%;
+        margin-bottom: 3rem;
+    }
+
+    .conteudo{
+        width: fit-content;
+        padding-left: 2%;  
+        padding-right: 4%; 
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .entrada{
+        padding-left: auto 0;
+        width: 18rem;
+        height: 15.5rem;
+        border-radius: 55PX;
+    }
+    
+    .entrada-caixa {
+        margin-top: 20px;
+        width: 15.5rem;
+        height: 13rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .entrada-butoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+        margin-top: 5px;
+    }
+
+    .entrada-criptografar{
+        width: 15.5rem;
+        height: 2.8rem;
+        border-radius: 17px;
+        border: 1px solid var(--cor-detalhes);
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .entrada-criptografar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .entrada-descriptografar{
+        width: 15.5rem;
+        height: 2.8rem;
+        border-radius: 17px;
+        border: 1px solid var(--cor-detalhes);
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .entrada-descriptografar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .saida {
+        width: 18rem;
+        height: 15.5rem;
+        border-radius: 55px;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .saida-caixa {
+        margin-top: 1rem;
+        width: 15rem;
+        height: 10rem;
+        font-size: 1.5rem;
+        margin-bottom: 9%;
+    }
+
+    .saida-copiar{
+        width: 9.4rem;
+        height: 2.5rem;
+        border-radius: 1rem;
+        border: 0.5px solid var(--cor-detalhes);
+        font-size: 1rem;
+        justify-content: center;
+        margin-left: 4.2rem;
+        margin-top: -1rem;
+    }
+
+    .saida-copiar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .rodape{
+        text-align: center;
+        font-size: 1.2rem;
+        margin:auto;
+        margin-left: 5%;
+    }
+
+}
+
+/* tela pequena grande smartphone*/
+@media (min-width: 340px) and (max-width: 354px) {
+    .cabecalho{
+        font-size: 1.2rem;
+        margin: auto;
+        font-weight: 600;
+        margin-left: 7%;
+        margin-bottom: 3rem;
+    }
+
+    .conteudo{
+        width: fit-content;
+        padding-left: 4%;  
+        padding-right: 4%; 
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .entrada{
+        padding-left: auto 0;
+        width: 19rem;
+        height: 15.5rem;
+        border-radius: 55PX;
+    }
+    
+    .entrada-caixa {
+        margin-top: 20px;
+        width: 16.5rem;
+        height: 13rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .entrada-butoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+        margin-top: 5px;
+    }
+
+    .entrada-criptografar{
+        width: 15.5rem;
+        height: 2.8rem;
+        border-radius: 17px;
+        border: 1px solid var(--cor-detalhes);
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .entrada-criptografar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .entrada-descriptografar{
+        width: 15.5rem;
+        height: 2.8rem;
+        border-radius: 17px;
+        border: 1px solid var(--cor-detalhes);
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .entrada-descriptografar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .saida {
+        width: 19rem;
+        height: 15.5rem;
+        border-radius: 55px;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .saida-caixa {
+        margin-top: 1rem;
+        width: 16rem;
+        height: 11rem;
+        font-size: 1.5rem;
+        margin-bottom: 4%;
+    }
+
+    .saida-copiar{
+        width: 9.4rem;
+        height: 2.5rem;
+        border-radius: 1rem;
+        border: 0.5px solid var(--cor-detalhes);
+        font-size: 1rem;
+        justify-content: center;
+        margin-left: 4.8rem;
+        margin-top: -1rem;
+    }
+
+    .saida-copiar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .rodape{
+        text-align: center;
+        font-size: 1.2rem;
+        margin:auto;
+        margin-left: 5%;
+    }
+
+}
+
+/*tela média pequena smartphone*/
+@media (min-width: 355px) and (max-width: 365px)  {
+    .cabecalho{
+        font-size: 1.2rem;
+        margin: auto;
+        font-weight: 600;
+        margin-left: 5%;
+        margin-bottom: 3rem;
+    }
+
+    .conteudo{
+        width: fit-content;
+        padding-left: 4%;    
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .entrada{
+        padding-left: auto 0;
+        width: 20rem;
+        height: 16.5rem;
+        border-radius: 55PX;
+    }
+    
+    .entrada-caixa {
+        margin-top: 20px;
+        width: 17.5rem;
+        height: 14rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .entrada-butoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+        margin-top: 5px;
+    }
+
+    .entrada-criptografar{
+        width: 15.5rem;
+        height: 2.8rem;
+        border-radius: 17px;
+        border: 1px solid var(--cor-detalhes);
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .entrada-criptografar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .entrada-descriptografar{
+        width: 15.5rem;
+        height: 2.8rem;
+        border-radius: 17px;
+        border: 1px solid var(--cor-detalhes);
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .entrada-descriptografar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .saida {
+        width: 20rem;
+        height: 16.5rem;
+        border-radius: 55px;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .saida-caixa {
+        margin-top: 1rem;
+        width: 17rem;
+        height: 11rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .saida-copiar{
+        width: 8.4rem;
+        height: 3rem;
+        border-radius: 1.2rem;
+        border: 1.5px solid var(--cor-detalhes);
+        font-size: 1rem;
+        justify-content: center;
+        margin-left: 5.6rem;
+    }
+
+    .saida-copiar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .rodape{
+        text-align: center;
+        font-size: 1.2rem;
+        margin:auto;
+        margin-left: 5%;
+    }
+}
+
+/*tela média smartphone*/
+@media (min-width: 366px) and (max-width: 385px)  {
+    .cabecalho{
+        font-size: 1.2rem;
+        margin: auto;
+        font-weight: 600;
+        margin-left: 7%;
+        margin-bottom: 3rem;
+    }
+
+    .conteudo{
+        width: fit-content;
+        padding-left: 4%;        
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .entrada{
+        padding-left: auto 0;
+        width: 20rem;
+        height: 16.5rem;
+        border-radius: 55PX;
+    }
+    
+    .entrada-caixa {
+        margin-top: 20px;
+        width: 17.5rem;
+        height: 14rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .entrada-butoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+        margin-top: 5px;
+    }
+
+    .entrada-criptografar{
+        width: 15.5rem;
+        height: 2.8rem;
+        border-radius: 17px;
+        border: 1px solid var(--cor-detalhes);
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .entrada-criptografar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .entrada-descriptografar{
+        width: 15.5rem;
+        height: 2.8rem;
+        border-radius: 17px;
+        border: 1px solid var(--cor-detalhes);
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .entrada-descriptografar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .saida {
+        width: 20rem;
+        height: 16.5rem;
+        border-radius: 55px;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .saida-caixa {
+        margin-top: 1rem;
+        width: 16.8rem;
+        height: 11rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .saida-copiar{
+        width: 8.4rem;
+        height: 3rem;
+        border-radius: 1.2rem;
+        border: 1.5px solid var(--cor-detalhes);
+        font-size: 1rem;
+        justify-content: center;
+        margin-left: 5.6rem;
+    }
+
+    .saida-copiar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .rodape{
+        text-align: center;
+        font-size: 1.2rem;
+        margin:auto;
+        margin-left: 5%;
+    }
+}
+
+/*tela grande smartphone*/
+@media (min-width: 386px) and (max-width: 405px)  {
+    .cabecalho{
+        font-size: 1.2rem;
+        margin: auto;
+        font-weight: 600;
+        margin-left: 7%;
+        margin-bottom: 3rem;
+    }
+
+    .conteudo{
+        width: fit-content;
+        padding-left: 3%;  
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;      
+    }
+
+    .entrada{
+        padding-left: auto 0;
+        width: 21rem;
+        height: 16.5rem;
+        border-radius: 55PX;
+    }
+    
+    .entrada-caixa {
+        margin-top: 20px;
+        width: 18.5rem;
+        height: 14rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .entrada-butoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+        margin-top: 5px;
+    }
+
+    .entrada-criptografar{
+        width: 15.5rem;
+        height: 2.8rem;
+        border-radius: 17px;
+        border: 1px solid var(--cor-detalhes);
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .entrada-criptografar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .entrada-descriptografar{
+        width: 15.5rem;
+        height: 2.8rem;
+        border-radius: 17px;
+        border: 1px solid var(--cor-detalhes);
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .entrada-descriptografar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .saida {
+        width: 21rem;
+        height: 16.5rem;
+        border-radius: 55px;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .saida-caixa {
+        margin-top: 1rem;
+        width: 17.8rem;
+        height: 11rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .saida-copiar{
+        width: 8.4rem;
+        height: 3rem;
+        border-radius: 1.2rem;
+        border: 1.5px solid var(--cor-detalhes);
+        font-size: 1rem;
+        justify-content: center;
+        margin-left: 6.1rem;
+    }
+
+    .saida-copiar:hover{
+        cursor: none;
+        background-color: var(--cor-primaria);
+    }
+
+    .rodape{
+        text-align: center;
+        font-size: 1.2rem;
+        margin:auto;
+        margin-left: 5%;
+    }
+
+}
